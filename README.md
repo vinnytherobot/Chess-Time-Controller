@@ -4,7 +4,7 @@ A simple and interactive **Chess Time Controller** built with **HTML**, **CSS**,
 
 ## Features
 
-- 🕒 Two separate timers for each player, with a starting time of 5 minutes (configurable).
+- 🕒 Two separate timers for each player, with a starting time of 3 minutes.
 - 🔄 Player turn switching with a single click.
 - ⏳ Countdown mechanism that stops when time runs out.
 - 🎨 Clean and minimalistic UI with visual feedback for the active player.
