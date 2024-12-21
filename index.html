@@ -13,16 +13,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="timer player1" onclick="switchTurn('player2')">
-        <div>
-            <span id="time1">03:00</span>
+    <header class="navbar">
+        <div class="logo">
+            <a href="https://github.com/vinnytherobot" target="_blank">
+                VTR
+            </a>
         </div>
-    </section>
-    <section class="timer player2" onclick="switchTurn('player1')">
-        <div>
-            <span id="time2">03:00</span>
-        </div>
-    </section>
+        <nav class="links">
+            <ul>
+                <li class="link"><a href="/index.html">Home</a></li>
+                <li class="link"><a href="/settings/index.html">Get Started</a></li>
+                <li class="link"><a href="https://github.com/vinnytherobot" target="_blank">About</a></li>
+                <li class="link"><a href="/settings/index.html">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to the best chess time controller!</h1>
+        <button><a href="/settings/index.html">Get Started!</a></button>
+    </main>
 </body>
-    <script src="script.js"></script>
 </html>

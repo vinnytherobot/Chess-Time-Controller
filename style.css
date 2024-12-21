@@ -9,32 +9,113 @@
 }
 
 body {
-    background: #202123;
-    display: block;
-    height: 100vh;
-}
-
-.timer {
+    position: absolute;
     width: 100%;
-    height: 50%;
+    height: 100%;
+    background: #202123;
+}
+
+.navbar {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    border: 1px solid white;
+    padding: 1em 3em;
+}
+
+.navbar .logo {
+    background-color: #65FE;
+    border-radius: 0.3em;
+    padding: 0.5em;
+}
+
+.navbar .logo a {
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.navbar .links ul {
+    display: flex;
+    gap: 5em;
+}
+
+.navbar .links ul .link a {
+    font-size: 20px;
+    font-weight: 600;
+    color: gray;
     cursor: pointer;
+    transition: all 0.4s ease;
 }
 
-.timer:first-child div {
+.navbar .links ul .link a:hover {
+    color: #ccc;
+}
+
+@media (max-width: 720px) {
+    .navbar .links {
+        display: none;
+    }
+}
+
+main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 5em 3em;
+    text-align: center;
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/img/chess.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+main h1 {
+    position: relative;
+    z-index: 1;
     color: white;
-    font-size: 7rem;
-    transform: rotate(180deg);
+    font-size: 3rem;
+    margin-bottom: 5em;
 }
 
-.timer:nth-child(2) div {
-    color: white;
-    font-size: 7rem;
+main button {
+    padding: 1em 2em;
+    background-color: #65FE;
+    border-radius: 0.3em;
+    border: none;
 }
 
-.timer.active {
-    background: green;
+main button a {
+    color: #FFF;
+    font-weight: 600;
+    font-size: 2.5em;
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 3em 2em;
+    }
+
+    main h1 {
+        font-size: 2rem;
+        margin-bottom: 3em;
+    }
+
+    main button {
+        padding: 0.8em 1.8em;
+    }
+
+    main button a {
+        font-size: 2rem;
+    }
 }

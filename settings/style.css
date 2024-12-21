@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    user-select: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #202123;
+    color: white;
+    padding: 10px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    max-width: 400px;
+    background-color: #333;
+    padding: 20px 25px;
+    border-radius: 8px;
+}
+
+label {
+    font-size: 1.1rem;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+button {
+    padding: 10px;
+    font-size: 1.1rem;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    form {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    form {
+        padding: 18px;
+        gap: 18px;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1.05rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        max-width: 500px;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        font-size: 1.1rem;
+    }
+
+    button {
+        font-size: 1.1rem;
+    }
+}
