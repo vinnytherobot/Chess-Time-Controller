@@ -35,7 +35,6 @@ body::before {
     justify-content: space-between;
     align-items: center;
     padding: 1em 3em;
-    z-index: 999;
 }
 
 .logo {
@@ -87,6 +86,7 @@ body::before {
     justify-content: justify;
 }
 
+
 .responsive-menu.active {
     height: 100%;
     opacity: 1;
@@ -98,7 +98,7 @@ body::before {
 }
 
 .responsive-menu .head {
-    display: flex;
+    display: none;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -106,6 +106,7 @@ body::before {
 }
 
 .responsive-menu .head .close-menu-icon {
+    display: none;
     font-size: 25px;
     font-weight: 800;
     color: #ccc;
@@ -148,6 +149,14 @@ body::before {
     }
 
     .navbar .menu-icon {
+        display: flex;
+    }
+
+    .responsive-menu .head {
+        display: flex;
+    }
+
+    .responsive-menu .head .close-menu-icon {
         display: flex;
     }
 }
