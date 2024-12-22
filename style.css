@@ -78,6 +78,7 @@ body::before {
     width: 70%;
     height: 0;
     opacity: 0;
+    display: none;
     background-color: #262728; 
     z-index: 999; 
     padding: 2em;
@@ -150,6 +151,10 @@ body::before {
     }
 
     .navbar .menu-icon {
+        display: flex;
+    }
+
+    .responsive-menu {
         display: flex;
     }
 
