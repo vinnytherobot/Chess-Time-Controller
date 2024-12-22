@@ -30,7 +30,7 @@ body {
 
 .navbar .logo a {
     color: #FFF;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
 }
 
@@ -40,7 +40,7 @@ body {
 }
 
 .navbar .links ul .link a {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     color: gray;
     cursor: pointer;
