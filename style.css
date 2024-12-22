@@ -118,6 +118,7 @@ body::before {
 
 .responsive-menu .links ul .link {
     margin-bottom: 2em;
+    display: none;
 }
 
 .responsive-menu .links ul .link a {
@@ -157,6 +158,10 @@ body::before {
     }
 
     .responsive-menu .head .close-menu-icon {
+        display: flex;
+    }
+
+    .responsive-menu .links ul .link {
         display: flex;
     }
 }
